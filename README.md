@@ -9,5 +9,6 @@ Overview
 ## Use API 
 Flickr API 
 ## Usage
-First,
-'pod install'
+```First,
+pod install
+```
