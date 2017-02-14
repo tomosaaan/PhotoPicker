@@ -7,7 +7,7 @@ Overview
 ## Demo
 
 ## Use API 
-Flickr API 
+Flickr API (https://www.flickr.com/services/api/)
 ## Usage
 *Step1
 ```
