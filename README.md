@@ -24,3 +24,4 @@ struct ApiInfomation {
     static let apiSecretKey = "123456789"   
 }
 ```
+
