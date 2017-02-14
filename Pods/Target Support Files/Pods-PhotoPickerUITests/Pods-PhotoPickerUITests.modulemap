@@ -1,0 +1,6 @@
+framework module Pods_PhotoPickerUITests {
+  umbrella header "Pods-PhotoPickerUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

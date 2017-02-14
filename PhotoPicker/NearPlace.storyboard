@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="iaa-sr-1pb">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Near Place View Controller-->
+        <scene sceneID="Piv-mn-ToR">
+            <objects>
+                <viewController storyboardIdentifier="NearPlaceViewController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="iaa-sr-1pb" customClass="NearPlaceViewController" customModule="PhotoPicker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="g7g-bT-vGl"/>
+                        <viewControllerLayoutGuide type="bottom" id="Tl2-ar-ty8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TFQ-bR-SYq">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="J8g-zX-78R">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="205"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="205" id="T2o-sM-ml1"/>
+                                </constraints>
+                            </mapView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="SCb-Me-MDJ">
+                                <rect key="frame" x="0.0" y="210" width="375" height="393"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="LYA-9j-tdP">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="SCb-Me-MDJ" firstAttribute="leading" secondItem="TFQ-bR-SYq" secondAttribute="leading" id="28R-GA-MWW"/>
+                            <constraint firstAttribute="trailing" secondItem="SCb-Me-MDJ" secondAttribute="trailing" id="AR3-7C-WBM"/>
+                            <constraint firstAttribute="trailing" secondItem="J8g-zX-78R" secondAttribute="trailing" id="NGW-04-lDW"/>
+                            <constraint firstItem="Tl2-ar-ty8" firstAttribute="top" secondItem="SCb-Me-MDJ" secondAttribute="bottom" id="RCt-N1-N9U"/>
+                            <constraint firstItem="J8g-zX-78R" firstAttribute="leading" secondItem="TFQ-bR-SYq" secondAttribute="leading" id="ebr-jk-lkn"/>
+                            <constraint firstItem="SCb-Me-MDJ" firstAttribute="top" secondItem="J8g-zX-78R" secondAttribute="bottom" constant="5" id="mCH-d7-Cgv"/>
+                            <constraint firstItem="J8g-zX-78R" firstAttribute="top" secondItem="g7g-bT-vGl" secondAttribute="bottom" id="u75-s8-EP4"/>
+                        </constraints>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="collectionView" destination="SCb-Me-MDJ" id="BZ9-uK-SoR"/>
+                        <outlet property="mapView" destination="J8g-zX-78R" id="NGN-md-iKq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FHF-wT-jbD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="168.80000000000001" y="188.45577211394306"/>
+        </scene>
+    </scenes>
+</document>

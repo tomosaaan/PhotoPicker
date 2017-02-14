@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation First View Controller-->
+        <scene sceneID="jae-4N-J9Z">
+            <objects>
+                <viewController storyboardIdentifier="NavigationFirstLaunch" useStoryboardIdentifierAsRestorationIdentifier="YES" id="4GB-Ff-jTr" customClass="NavigationFirstViewController" customModule="PhotoPicker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tYL-M7-mul"/>
+                        <viewControllerLayoutGuide type="bottom" id="eSw-Ku-JmO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EkJ-pG-bf1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sea_back" translatesAutoresizingMaskIntoConstraints="NO" id="RHv-gi-0sp">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mLn-Es-0Jd">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="lgp-0H-Hg1">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let's Photo travel！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K1M-bv-2vb">
+                                            <rect key="frame" x="105" y="209" width="165" height="17"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="1" blue="0.83578199659708652" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q0f-tD-xa6">
+                                            <rect key="frame" x="168" y="319" width="40" height="29"/>
+                                            <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
+                                            <state key="normal" title="start">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="K1M-bv-2vb" firstAttribute="centerX" secondItem="lgp-0H-Hg1" secondAttribute="centerX" id="46c-vb-ZyR"/>
+                                        <constraint firstItem="q0f-tD-xa6" firstAttribute="centerY" secondItem="lgp-0H-Hg1" secondAttribute="centerY" id="Cc1-wb-ReJ"/>
+                                        <constraint firstItem="q0f-tD-xa6" firstAttribute="centerX" secondItem="lgp-0H-Hg1" secondAttribute="centerX" id="FbA-g3-psy"/>
+                                        <constraint firstItem="K1M-bv-2vb" firstAttribute="centerY" secondItem="lgp-0H-Hg1" secondAttribute="centerY" constant="-116" id="VVO-Ix-PYp"/>
+                                    </constraints>
+                                </view>
+                                <blurEffect style="dark"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="RHv-gi-0sp" secondAttribute="trailing" id="1tA-cD-89A"/>
+                            <constraint firstItem="eSw-Ku-JmO" firstAttribute="top" secondItem="RHv-gi-0sp" secondAttribute="bottom" id="25B-Nk-brK"/>
+                            <constraint firstItem="RHv-gi-0sp" firstAttribute="leading" secondItem="EkJ-pG-bf1" secondAttribute="leading" id="Egg-5j-Eyn"/>
+                            <constraint firstItem="eSw-Ku-JmO" firstAttribute="top" secondItem="mLn-Es-0Jd" secondAttribute="bottom" id="Ibv-S5-eeH"/>
+                            <constraint firstItem="mLn-Es-0Jd" firstAttribute="leading" secondItem="EkJ-pG-bf1" secondAttribute="leading" id="aSl-Ww-bmT"/>
+                            <constraint firstAttribute="trailing" secondItem="mLn-Es-0Jd" secondAttribute="trailing" id="abf-xm-cGl"/>
+                            <constraint firstItem="RHv-gi-0sp" firstAttribute="top" secondItem="EkJ-pG-bf1" secondAttribute="top" id="bA5-ch-c3U"/>
+                            <constraint firstItem="mLn-Es-0Jd" firstAttribute="top" secondItem="EkJ-pG-bf1" secondAttribute="top" id="pRP-DF-mY2"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="startButton" destination="q0f-tD-xa6" id="nXT-JE-XVW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gCc-wx-Hbx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="144.80000000000001" y="157.87106446776613"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="sea_back" width="320" height="480"/>
+    </resources>
+</document>

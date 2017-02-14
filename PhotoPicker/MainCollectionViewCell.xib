@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MainCollectionViewCell" id="gTV-IL-0wX" customClass="MainCollectionViewCell" customModule="PhotoPicker" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="151" height="151"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="151" height="151"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dwA-r7-lWy">
+                        <rect key="frame" x="0.0" y="0.0" width="151" height="151"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="dwA-r7-lWy" secondAttribute="trailing" id="13a-AA-yPk"/>
+                <constraint firstItem="dwA-r7-lWy" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Mit-3C-eLX"/>
+                <constraint firstItem="dwA-r7-lWy" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="R3R-qQ-0gy"/>
+                <constraint firstItem="dwA-r7-lWy" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="width" id="mMN-V8-o4y"/>
+            </constraints>
+            <size key="customSize" width="151" height="151"/>
+            <connections>
+                <outlet property="photoImageView" destination="dwA-r7-lWy" id="5Zf-mr-ttB"/>
+            </connections>
+            <point key="canvasLocation" x="47.5" y="-64.5"/>
+        </collectionViewCell>
+    </objects>
+</document>
