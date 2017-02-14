@@ -9,6 +9,9 @@ Overview
 ## Use API 
 Flickr API 
 ## Usage
-```First,
+*Step1
+```
 pod install
 ```
+*Step2
+Please register Flickr, and get Token .
