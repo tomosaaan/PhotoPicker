@@ -13,5 +13,4 @@ Flickr API
 ```
 pod install
 ```
-*Step2
-Please register Flickr, and get Token .
+*Step2  Please register Flickr, and get Token .
