@@ -1,7 +1,7 @@
 PhotoPicker  
 
 ## Demo
-![photo_check](https://giphy.com/gifs/l3q30kL1PjN3wZadW)
+![サンプル](http://i.giphy.com/l3q30kL1PjN3wZadW.gif)
 ## Use API 
 Flickr API (https://www.flickr.com/services/api/)
 ## Usage
