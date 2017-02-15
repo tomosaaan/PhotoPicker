@@ -1,7 +1,7 @@
 PhotoPicker  
 
 ## Demo
-![demo](http://giphy.com/gifs/l3q30kL1PjN3wZadW =320x670)
+![demo](http://giphy.com/gifs/l3q30kL1PjN3wZadW | 320x670)
 ## Use API 
 Flickr API (https://www.flickr.com/services/api/)
 ## Usage
